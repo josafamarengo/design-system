@@ -1,0 +1,58 @@
+{
+  "name": "design-system",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "keywords": [
+    "design system",
+    "components"
+  ],
+  "author": "Pâmela Silveira",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.18.10",
+    "@storybook/addon-actions": "^6.5.10",
+    "@storybook/addon-centered": "^5.3.21",
+    "@storybook/addon-essentials": "^6.5.10",
+    "@storybook/addon-info": "^5.3.21",
+    "@storybook/addon-interactions": "^6.5.10",
+    "@storybook/addon-links": "^6.5.10",
+    "@storybook/builder-webpack4": "^6.5.10",
+    "@storybook/manager-webpack4": "^6.5.10",
+    "@storybook/react": "^6.5.10",
+    "@storybook/testing-library": "^0.0.13",
+    "@storybook/theming": "^6.5.10",
+    "@types/react": "^18.0.17",
+    "@types/styled-components": "^5.1.26",
+    "babel-loader": "^8.2.5",
+    "html-webpack-plugin": "^5.5.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "2.7.1",
+    "react": "^18.2.0",
+    "react-docgen-typescript-loader": "^3.7.2",
+    "stylelint": "^14.10.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-recommended": "^9.0.0",
+    "stylelint-config-standard": "^27.0.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-order": "^5.0.0",
+    "ts-loader": "^9.3.1",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "styled-components": "^5.3.5"
+  },
+  "scripts": {
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "build": "tsc -p .",
+    "start": "react-scripts start",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  }
+}
